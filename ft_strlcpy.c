@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 19:23:35 by lemmerli          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2025/10/14 20:36:27 by lemmerli         ###   ########.fr       */
-=======
-/*   Updated: 2025/10/14 20:13:52 by lemmerli         ###   ########.fr       */
->>>>>>> c8f76d6 (Created)
+/*   Created: 2025/10/14 12:30:38 by lemmerli          #+#    #+#             */
+/*   Updated: 2025/10/14 19:15:38 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-char	*ft_strchr(const char *s, int c)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	unsigned char	val;
+	size_t	src_len;
 
 	i = 0;
-	val = c;
-	while (s[i])
+	src_len = 0;
+	while (src[src_len] != '\0')
+		src_len++;
+	if (size == 0)
+		return (src_len);
+	while (i + 1 < size && src[i] != '\0')
 	{
-		if (s[i] == val)
-			return(&s);
+		dest[i] = src[i];
 		i++;
 	}
-	if (s[i + 1] == '\0')
-		return (&s);
-	return (0);
+	dest [i] = '\0';
+	return (src_len);
 }
