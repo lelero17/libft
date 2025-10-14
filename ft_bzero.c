@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 12:54:33 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/11 18:56:49 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:04:57 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_bzero(void *s, size_t n)
 	byte_ptr = s;
 	while (i < n)
 	{
-		byte_ptr[i] = 0;
+		byte_ptr[i] = '0';
 		i++;
 	}
 }
