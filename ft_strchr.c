@@ -6,11 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:23:35 by lemmerli          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2025/10/14 20:36:27 by lemmerli         ###   ########.fr       */
-=======
-/*   Updated: 2025/10/14 20:13:52 by lemmerli         ###   ########.fr       */
->>>>>>> c8f76d6 (Created)
+/*   Updated: 2025/10/16 15:24:02 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	val;
 
 	i = 0;
-	val = c;
+	val = (unsigned char) c;
 	while (s[i])
 	{
-		if (s[i] == val)
-			return(&s);
+		if (val == (unsigned char)s[i])
+			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i + 1] == '\0')
-		return (&s);
-	return (0);
+	if (val == '\0')
+		return ((char *)&s[i]);
+	return (NULL);
 }
