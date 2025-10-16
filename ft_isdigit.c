@@ -6,9 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 18:48:09 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/10 18:55:45 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:19:52 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

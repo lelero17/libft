@@ -6,9 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:26:46 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/16 15:23:52 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:20:50 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

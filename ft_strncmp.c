@@ -6,20 +6,19 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:43:09 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/16 17:26:53 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:20:39 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
-	while(s1[i] == s2[i])
+	while (s1[i] == s2[i])
 	{
 		i++;
-		
 	}
 }

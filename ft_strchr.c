@@ -6,11 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:23:35 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/16 15:24:02 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:20:22 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

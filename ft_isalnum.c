@@ -6,9 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 18:53:33 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/10 19:01:04 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:19:34 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

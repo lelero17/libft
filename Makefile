@@ -6,50 +6,50 @@
 #    By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/16 12:51:49 by lemmerli          #+#    #+#              #
-#    Updated: 2025/10/16 16:48:47 by lemmerli         ###   ########.fr        #
+#    Updated: 2025/10/16 20:55:35 by lemmerli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME	= libft.a
 
-CC = cc
+CC		= cc
+CFLAGS	+= -Wall -Wextra -Werror
 
-CFLAGS += -Wall -Wextra -Werror
-
-AR = ar
-
+AR		= ar
 ARFLAGS = rcs
+RM		= rm -f
 
-RM = rm -f
+SRCS	= 	ft_bzero.c \
+			ft_isalnum.c \
+			ft_isalpha.c \
+			ft_isascii.c \
+			ft_isdigit.c \
+			ft_isprint.c \
+			ft_memcpy.c \
+			ft_memmove.c \
+			ft_memset.c \
+			ft_strchr.c \
+			ft_strlen.c \
+			ft_strlcpy.c \
+			ft_strrchr.c \
+			ft_tolower.c \
+			ft_toupper.c
 
-MY_SOURCES = 	ft_bzero.c \
-				ft_isalnum.c \
-				ft_isalpha.c \
-				ft_isascii.c \
-				ft_isdigit.c \
-				ft_isprint.c \
-				ft_memcpy.c \
-				ft_memmove.c \
-				ft_memset.c \
-				ft_strchr.c \
-				ft_strlen.c \
-				ft_strncmp.c \
-				ft_strrchr.c \
-				ft_tolower.c \
-				ft_toupper.c
-
-MY_OBJECTS = $(MY_SOURCES:.c=.o)
+OBJDIR	= OBJ
+OBJS	= $(SRCS:%.c=$(OBJDIR)/%.o)
 
 all: $(NAME)
 
-$(NAME): $(MY_OBJECTS)
-	$(AR) $(ARFLAGS) $(NAME) $(MY_OBJECTS)
+$(NAME): $(OBJS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
-%.o: %.c libft.h
+$(OBJDIR)/%.o: %.c libft.h
+	@mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean: 
-	$(RM) $(MY_OBJECTS)
+	$(RM) $(OBJS)
+	@rmdir $(OBJDIR) 2>/dev/null || true
 
 fclean: clean
 	$(RM) $(NAME)

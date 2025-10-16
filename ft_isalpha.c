@@ -6,9 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 18:31:06 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/10 18:50:51 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:19:39 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

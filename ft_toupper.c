@@ -6,9 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:23:51 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/16 15:23:51 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:20:56 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

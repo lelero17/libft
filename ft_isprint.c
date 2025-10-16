@@ -6,9 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:17:06 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/10 19:19:00 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/16 20:19:58 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
