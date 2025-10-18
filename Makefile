@@ -6,7 +6,7 @@
 #    By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/16 12:51:49 by lemmerli          #+#    #+#              #
-#    Updated: 2025/10/17 15:04:10 by lemmerli         ###   ########.fr        #
+#    Updated: 2025/10/18 19:56:59 by lemmerli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,9 @@ AR		= ar
 ARFLAGS = rcs
 RM		= rm -f
 
-SRCS	= 	ft_bzero.c \
+SRCS	= 	ft_atoi.c \
+			ft_bzero.c \
+			ft_calloc.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
@@ -31,12 +33,14 @@ SRCS	= 	ft_bzero.c \
 			ft_memmove.c \
 			ft_memset.c \
 			ft_strchr.c \
+			ft_strdup.c \
 			ft_strlcat.c \
 			ft_strlen.c \
 			ft_strncmp.c \
 			ft_strnstr.c \
 			ft_strlcpy.c \
 			ft_strrchr.c \
+			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c
 
