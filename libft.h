@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 15:16:27 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/18 19:56:56 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/22 18:48:13 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strdup(const char *s);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/16 12:51:49 by lemmerli          #+#    #+#              #
-#    Updated: 2025/10/18 19:56:59 by lemmerli         ###   ########.fr        #
+#    Updated: 2025/10/22 19:42:01 by lemmerli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRCS	= 	ft_atoi.c \
 			ft_memset.c \
 			ft_strchr.c \
 			ft_strdup.c \
+			ft_strjoin.c \
 			ft_strlcat.c \
 			ft_strlen.c \
 			ft_strncmp.c \
