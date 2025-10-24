@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/10/16 12:51:49 by lemmerli          #+#    #+#              #
-#    Updated: 2025/10/22 19:42:01 by lemmerli         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME	= libft.a
 
 CC		= cc
@@ -32,6 +20,7 @@ SRCS	= 	ft_atoi.c \
 			ft_memcpy.c \
 			ft_memmove.c \
 			ft_memset.c \
+			ft_split.c \
 			ft_strchr.c \
 			ft_strdup.c \
 			ft_strjoin.c \
@@ -41,6 +30,7 @@ SRCS	= 	ft_atoi.c \
 			ft_strnstr.c \
 			ft_strlcpy.c \
 			ft_strrchr.c \
+			ft_strtrim.c \
 			ft_substr.c \
 			ft_tolower.c \
 			ft_toupper.c
