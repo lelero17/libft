@@ -6,13 +6,13 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 10:49:22 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/25 15:26:38 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/26 15:37:17 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_intlen(int n)
+static int	ft_intlen(int n)
 {
 	long	temp;
 	int		len;

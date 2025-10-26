@@ -6,13 +6,13 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 19:23:25 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/23 12:27:25 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/26 15:40:01 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_char_in(char c, char const *set)
+static int	ft_char_in(char c, char const *set)
 {
 	size_t	i;
 

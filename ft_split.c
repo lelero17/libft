@@ -6,19 +6,17 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 13:43:27 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/24 16:04:28 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/26 16:51:42 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_count_words(char const *s, char c)
+static size_t	ft_count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
 
-	if (!s)
-		return (0);
 	i = 0;
 	count = 0;
 	while (s[i] != '\0')
@@ -34,7 +32,7 @@ size_t	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-void	ft_free_all(char **array, size_t count)
+static void	ft_free_all(char **array, size_t count)
 {
 	size_t	i;
 
@@ -49,7 +47,7 @@ void	ft_free_all(char **array, size_t count)
 	free(array);
 }
 
-char	*ft_next_word(const char *s, size_t *i, char c)
+static char	*ft_next_word(const char *s, size_t *i, char c)
 {
 	size_t	start;
 	size_t	len;

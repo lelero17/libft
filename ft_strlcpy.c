@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:30:38 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/16 20:20:32 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/26 12:44:41 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[i] = src[i];
 		i++;
 	}
-	dest [i] = '\0';
+	dest[i] = '\0';
 	return (src_len);
 }

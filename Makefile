@@ -1,10 +1,13 @@
 NAME	= libft.a
 
-CC		= cc
+CC		= gcc
 CFLAGS	+= -Wall -Wextra -Werror
 
-AR		= ar
+AR		= ar 
 ARFLAGS = rcs
+# Archiviert libft.a aus mehreren .o-Files
+# r = replace/add, c = create, s = index erstellen
+
 RM		= rm -f
 
 SRCS	= 	ft_atoi.c \
@@ -44,23 +47,32 @@ SRCS	= 	ft_atoi.c \
 
 OBJDIR	= OBJ
 OBJS	= $(SRCS:%.c=$(OBJDIR)/%.o)
+# Erzeugt aus jeder .c ein .o im Ordner OBJ
 
 all: $(NAME)
+# Wird ausgefuehrt bei 'make', Standardziel
 
 $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
+# Baut die Bibliothek libft.a aus allen .o-Dateien
 
 $(OBJDIR)/%.o: %.c libft.h
 	@mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
+# Kompiliert jede .c zu .o
+# $< Quell-Datei | $@ Ziel-Datei
+# libft.h -> bei Headeraenderung neu kompilieren
 
 clean: 
 	$(RM) $(OBJS)
-	@rmdir $(OBJDIR) 2>/dev/null || true
+# Loescht alle .o-Dateien
 
 fclean: clean
 	$(RM) $(NAME)
+# Loescht zusaetzlich libft.a
 
 re: fclean all
+# Alles neu bauen
 
 .PHONY: all clean fclean re
+# Sagt einfach das diese Targets ausgefuehrt wird, auch wenn Files mit gleichen namen exestieren
