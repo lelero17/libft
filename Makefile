@@ -45,8 +45,8 @@ SRCS	= 	ft_atoi.c \
 			ft_tolower.c \
 			ft_toupper.c
 
-OBJDIR	= OBJ
-OBJS	= $(SRCS:%.c=$(OBJDIR)/%.o)
+
+OBJS	= $(SRCS:%.c=%.o)
 # Erzeugt aus jeder .c ein .o im Ordner OBJ
 
 all: $(NAME)
@@ -56,8 +56,7 @@ $(NAME): $(OBJS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 # Baut die Bibliothek libft.a aus allen .o-Dateien
 
-$(OBJDIR)/%.o: %.c libft.h
-	@mkdir -p $(OBJDIR)
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 # Kompiliert jede .c zu .o
 # $< Quell-Datei | $@ Ziel-Datei
