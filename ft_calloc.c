@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 12:31:31 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/18 17:22:14 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:56:59 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	if (nmemb == 0 || size == 0)
-		return (malloc(1));
-	if (size != 0 && nmemb > (size_t)(-1) / size)
-		return (NULL);
+		return (malloc(0));
 	total = nmemb * size;
 	ptr = malloc(total);
 	if (!ptr)

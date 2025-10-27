@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 15:41:23 by lemmerli          #+#    #+#             */
-/*   Updated: 2025/10/16 20:20:04 by lemmerli         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:06:13 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*byte_dest;
 	const unsigned char	*byte_src;
 
+	if (dest == 0 && src == 0)
+		return (dest);
 	i = 0;
 	byte_dest = dest;
 	byte_src = src;
